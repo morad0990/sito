@@ -1,0 +1,36 @@
+/* Imposta le proprietà generali per il body */
+body {
+    margin: 0; /* Rimuove il margine predefinito del browser */
+    padding: 0; /* Rimuove il padding predefinito del browser */
+    display: flex; /* Abilita il layout flex per allineare i contenuti */
+    height: 100vh; /* Imposta l'altezza del body all'altezza della finestra del browser */
+    overflow: hidden; /* Nasconde eventuali contenuti che escono dalla finestra */
+}
+
+/* Stile per la barra sinistra */
+.left-bar {
+    width: 50%; /* Larghezza della barra sinistra al 50% del container */
+    height: 100%; /* Altezza della barra pari a quella del contenitore (body) */
+    border: 1px solid red; /* Bordo rosso per la barra sinistra */
+    padding: 50px; /* Padding interno di 50px */
+    box-sizing: border-box; /* Include padding e bordi nel calcolo della larghezza totale */
+}
+
+/* Stile per la barra destra */
+.right-bar {
+    width: 50%; /* Larghezza della barra destra al 50% del container */
+    border: 1px solid green; /* Bordo verde per la barra destra */
+    padding: 50px; /* Padding interno di 50px */
+    box-sizing: border-box; /* Include padding e bordi nel calcolo della larghezza totale */
+}
+
+/* Stile per la linea centrale */
+.center-line {
+    width: 8px; /* Larghezza della linea centrale */
+    height: 100%; /* Fai in modo che la linea centrale occupi tutta l'altezza */
+    box-sizing: border-box; /* Include padding e bordi nel calcolo della larghezza totale */
+    margin-top: 0px; /* Margine superiore nullo */
+    margin-bottom: 0px; /* Margine inferiore nullo */
+    margin-left: 20px; /* Margine a sinistra di 20px */
+    margin-right: 20px; /* Margine a destra di 20px */
+}

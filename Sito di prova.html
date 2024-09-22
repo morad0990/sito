@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html lang="it"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mourad Ouaragua">
+    <meta name="description" content="Sito di prova">
+    
+    
+    <title>Sito di prova</title>
+<script type="text/javascript" src="./Sito di prova_files/content-script.js.download"></script><link rel="shortcut icon" href="http://127.0.0.1:5500/immagini/loghi/logo.png" type="image/x-icon"><link href="./Sito di prova_files/indexhtml.css" rel="stylesheet" type="text/css"></head>
+
+<body data-cjcrx="addYes">
+    <div class="left-bar">
+        <div class="title">
+            <h2 id="title">Titolo sito di prova</h2>
+        </div>
+
+        <div class="all-info-box">
+            <div class="info-box-1">
+                <h3 id="info-box-1-title">
+                    <strong>Titolo della info-box</strong>
+                </h3>
+                <p id="info-box-1-text">
+                    Testo della info-box
+                </p>
+            </div>
+
+            <div class="info-box-2">
+                <h3 id="info-box-2-title">
+                    <strong>Titolo della info-box</strong>
+                </h3>
+                <p id="info-box-2-text">
+                    Testo della info-box
+                </p>
+            </div>
+
+            <div class="info-box-3">
+                <h3 id="info-box-3-title">
+                    <strong>Titolo della info-box</strong>
+                </h3>
+                <p id="info-box-3-text">
+                    Testo della info-box
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="center-line">
+        
+    </div>
+
+    <div class="right-bar">
+        <div class="credential-box">
+            <div class="username-box">
+                <input type="text" id="username-input" name="username" placeholder="username" size="30">
+            </div>
+            <div class="password-box">
+                <input type="password" id="password-input" name="password" placeholder="password" size="30">
+            </div>
+        </div>
+    </div>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+
+</body></html>

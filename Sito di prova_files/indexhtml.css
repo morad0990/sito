@@ -1,0 +1,45 @@
+body {
+    display: flex;
+    margin: 0;
+    height: 100vh;
+}
+
+.left-bar, .right-bar {
+    background-color: #4CAF50; /* Colore verde per le barre laterali */
+    width: 30%; /* Larghezza delle barre laterali */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.center-line {
+    background-color: #2196F3; /* Colore blu per la barra centrale */
+    width: 2%; /* Larghezza della barra centrale */
+    margin: 0; /* Centrata */
+}
+
+.title {
+    margin-bottom: 20px;
+}
+
+.all-info-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.info-box-1, .info-box-2, .info-box-3 {
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #f1f1f1; /* Colore grigio per le info-box */
+    border-radius: 5px;
+}
+
+.username-box, .password-box {
+    margin-bottom: 10px;
+}
+
+input[type="text"], input[type="password"] {
+    width: 100%; /* Input occupa tutta la larghezza della barra destra */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
