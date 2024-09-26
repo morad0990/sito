@@ -40,19 +40,30 @@
     </div>
 
 
-    <!-- Sidebar Destra -->
-    <div class="right-bar">
-        <div class="credential-box">
-            <h2 id="right-bar-title">LOGIN</h2>
-            <div class="input-box">
-                <input type="text" id="username-input" name="username" required placeholder="Username" size="30">
+<!-- Sidebar Destra -->
+<div class="right-bar">
+    <div class="credential-box">
+        <h2 id="right-bar-title">LOGIN</h2>
+        <div class="input-box">
+            <input type="text" id="username-input" name="username" required placeholder="Username" size="30">
+
+            <!-- Campo password con toggle -->
+            <div class="password-container">
                 <input type="password" id="password-input" name="password" required placeholder="Password" size="30">
-            </div>
-            <div class="button-container">
-                <button id="login-button" type="submit">Login</button>
+                <!-- Icona di toggle per la password -->
+                <span id="togglePassword" class="toggle-password">&#128065;</span>
             </div>
         </div>
+        <div class="check-box-container">
+            <input type="checkbox" name="remember-me" id="remember-me">
+            <label for="remember-me">Rimanere connesso?</label>
+        </div>
+        <div class="button-container">
+            <button id="login-button" type="submit">Login</button>
+        </div>
     </div>
+</div>
+<script src="{{ url_for('static', filename='js/login.js') }}"></script>
 </body>       
 </html>
 
