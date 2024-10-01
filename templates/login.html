@@ -43,25 +43,28 @@
     <div class="right-bar">
         <div class="credential-box">
             <h2 id="right-bar-title">LOGIN</h2> <!-- Titolo del box di login -->
-            <div class="input-box">
-                <input type="text" id="username-input" name="username" required placeholder="Username" size="30"> <!-- Input per l'username -->
-
-                <!-- Campo password con toggle -->
-                <div class="password-container">
-                    <input type="password" id="password-input" name="password" required placeholder="Password" size="30"> <!-- Input per la password -->
-                    <!-- Icona di toggle per la password -->
-                    <span id="togglePassword" class="toggle-password">👁️</span> <!-- Icona per mostrare/nascondere la password -->
+            <form action="/login" method="POST">
+                <div class="input-box">
+                    <input type="text" id="username-input" name="username" required placeholder="Username" size="30"> <!-- Input per l'username -->
+    
+                    <!-- Campo password con toggle -->
+                    <div class="password-container">
+                        <input type="password" id="password-input" name="password" required placeholder="Password" size="30"> <!-- Input per la password -->
+                        <!-- Icona di toggle per la password -->
+                        <span id="togglePassword" class="toggle-password">👁️</span> <!-- Icona per mostrare/nascondere la password -->
+                    </div>
                 </div>
-            </div>
-            <div class="check-box-container">
-                <input type="checkbox" name="remember-me" id="remember-me"> <!-- Checkbox per ricordare l'accesso -->
-                <label for="remember-me">Rimanere connesso?</label> <!-- Etichetta per la checkbox -->
-            </div>
-            <div class="button-container">
-                <button id="login-button" type="submit">Login</button> <!-- Pulsante di login -->
-            </div>
+                <div class="check-box-container">
+                    <input type="checkbox" name="remember-me" id="remember-me"> <!-- Checkbox per ricordare l'accesso -->
+                    <label for="remember-me">Rimanere connesso?</label> <!-- Etichetta per la checkbox -->
+                </div>
+                <div class="button-container">
+                    <button id="login-button" type="submit">Login</button> <!-- Pulsante di login -->
+                </div>
+            </form>
         </div>
     </div>
     <script src="/static/js/login.js"></script> <!-- Collega il file JavaScript per le funzionalità -->
 </body>
 </html>
+   

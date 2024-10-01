@@ -172,6 +172,8 @@ body {
 
 /* Stile di base per il pulsante */
 #login-button {
+  position: relative;
+  top: 20px;
   color: white; /* Colore del testo per il pulsante */
   width: 94px; /* Larghezza fissa per il pulsante */
   height: 45px; /* Altezza fissa per il pulsante */
