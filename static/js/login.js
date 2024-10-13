@@ -15,3 +15,4 @@ togglePassword.addEventListener("click", function () {
   // Cambia l'icona in base alla visibilità della password
   togglePassword.textContent = type === "password" ? "👁️" : "🙈"; // Cambia l'icona in base al tipo di input
 });    
+   
